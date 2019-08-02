@@ -3,18 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>ajax-ex-calendar</title>
+    <!-- mio stile -->
     <link rel="stylesheet" href="mystyle.css">
+    <!-- libreria jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- libreria handlebars -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js"></script>
+    <!-- librerie moment -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js" charset="utf-8"></script>
 
   </head>
   <body>
 
+    <div class="calendario">
+      <h1></h1>
+      <ul class="lista">
 
+      </ul>
+    </div>
 
-
+    <!-- template handlebars -->
+       <script id="template" type="text/x-handlebars-template">
+       <li dateref="{{holidays}}">{{giorno}}</li>
+       </script>
 
 
 
